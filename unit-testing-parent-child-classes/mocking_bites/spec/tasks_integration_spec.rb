@@ -21,4 +21,13 @@ RSpec.describe "tasks integration" do
     task_2.mark_complete
     expect(task_list.all_complete?).to eq true
   end
+
+  it "marks tasks as incomplete" do
+    task_list = TaskList.new
+    task_1 = Task.new("Walk the dog")
+    task_2 = Task.new("Walk the cat")
+    task_list.add(task_1)
+    task_list.add(task_2)
+    expect(task_list.all_complete?).to eq false
+  end
 end

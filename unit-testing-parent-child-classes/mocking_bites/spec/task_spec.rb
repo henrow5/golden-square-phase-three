@@ -11,4 +11,9 @@ RSpec.describe Task do
     task.mark_complete
     expect(task.complete?).to eq true
   end
+
+  it "returns false when checking an incomplete task" do
+    task = Task.new("Walk the dog")
+    expect(task.complete?).to eq false
+  end
 end

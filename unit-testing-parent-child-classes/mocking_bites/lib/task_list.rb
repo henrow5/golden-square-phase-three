@@ -14,7 +14,7 @@ class TaskList
   def all_complete?
     return false if @tasks.empty?
     return @tasks.all? do |task|
-      task.complete?
-    end
+             task.complete?
+           end
   end
 end
