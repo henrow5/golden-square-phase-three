@@ -21,6 +21,6 @@ class TimeError
   end
 end
 
-require "net/http"
-time_error = TimeError.new(Net::HTTP)
-p time_error.error(Time.now)
+# require "net/http"
+# time_error = TimeError.new(Net::HTTP)
+# p time_error.error(Time.now)
